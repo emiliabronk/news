@@ -1,7 +1,7 @@
 title: "TRS"
 description: "This is a Real Site"
 url: ""
-baseurl: ""
+baseurl: "/news"
 timezone: "America/New_York"
 markdown: kramdown
 theme: null
