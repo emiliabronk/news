@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 For tips, porn shoots, fanmail, or cease-and-desist letters:  
-📧 emiliaronk@gmail.com
+📧 emiliabronk@gmail.com
 
 For things about the author 
 Emilia Bronk
