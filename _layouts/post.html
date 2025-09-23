@@ -2,6 +2,9 @@
 layout: default
 ---
 <article class="article">
+  {% if page.cover %}
+    <img class="cover" src="{{ page.cover | relative_url }}" alt="cover image">
+  {% endif %}
   <h1 class="headline">{{ page.title }}</h1>
   <div class="meta">By {{ page.author | default: "Staff" }}, {{ page.date | date: "%B %-d, %Y" }}</div>
   {% if page.standfirst %}<p class="standfirst">{{ page.standfirst }}</p>{% endif %}

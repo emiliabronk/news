@@ -1,15 +1,18 @@
-# TRS News (fixed with baseurl)
+# TRS News with Logo + Cover Support
 
-Deployable satire news site with working CSS under /news.
+## Features
+- Logo in masthead + favicon
+- Title + subtitle beside logo
+- Cover images in homepage cards
+- About + Contact pages
+- Live search
 
-## Steps
-1. Upload all files to a new repo named `news`.
-2. Settings → Pages → Deploy from branch → main/root.
-3. Site will appear at https://emiliabronk.github.io/news/
+## How to use
+1. Upload all files to your `news` repo.
+2. Place your logo file in `assets/logo.jpg` (already included).
+3. Add posts in `_posts/` with optional `cover:` front matter.
 
-## Add new posts
-Create `_posts/YYYY-MM-DD-title.md`:
-
+Example post front matter:
 ```
 ---
 layout: post
@@ -17,6 +20,7 @@ title: "Your Headline"
 standfirst: "Short summary."
 author: "Name"
 date: 2025-09-23
+cover: /news/assets/yourimage.jpg
 ---
-Body of your story in Markdown.
+Your text here.
 ```

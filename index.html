@@ -10,6 +10,7 @@ title: Front Page
   {% assign sorted = site.posts | sort: "date" | reverse %}
   {% for post in sorted %}
     <a class="card" href="{{ post.url | relative_url }}" data-post data-title="{{ post.title | escape }}" data-standfirst="{{ post.standfirst | default: post.excerpt | strip_html | strip_newlines | escape }}">
+      {% if post.cover %}<img src="{{ post.cover | relative_url }}" alt="preview">{% endif %}
       <h3>{{ post.title }}</h3>
       <p>{{ post.standfirst | default: post.excerpt | strip_html | truncate: 140 }}</p>
       <div class="card-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
