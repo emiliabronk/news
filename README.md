@@ -20,7 +20,7 @@ title: "Your Headline"
 standfirst: "Short summary."
 author: "Name"
 date: 2025-09-23
-cover: /news/assets/yourimage.jpg
+cover: /assets/yourimage.jpg
 ---
 Your text here.
 ```
