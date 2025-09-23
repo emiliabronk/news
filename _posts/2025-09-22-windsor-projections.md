@@ -4,7 +4,8 @@ title: "PORNJECTIONS ON WINDSOR CASTLE TRUMPS VISIT TO THE UK"
 standfirst: "Four arrested; images of Trump, Epstein, Obama, and Harry Styles shock Windsor."
 author: "Emilia Bronk"
 date: 2025-09-22
-cover: /news/assets/windsor-projection.png
+cover: /assets/windsor-projection.png
+
 ---
 LONDON, U.K., September 17th.
 
