@@ -3,5 +3,5 @@ layout: default
 title: Contact
 permalink: /contact/
 ---
-For tips, fanmail, or cease-and-desist letters:  
-📧 editor@example.com
+For tips, porn shoot, fanmail, or cease-and-desist letters:  
+📧 emiliaronk@gmail.com
