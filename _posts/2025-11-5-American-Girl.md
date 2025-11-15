@@ -7,7 +7,7 @@ date: 2025-11-5
 cover: /assets/Copy of B.jpg
 ---
 
-Amanda is a middle school student in New York City in 2001. Amanda loves NSCYNC watching TGIF, and being a true cold-blooded Giuliani fan. After Osama Bin Laden attacked the Twin Towers,
+Amanda is a middle school student in New York City in 2001. Amanda loves NSYNC watching TGIF, and being a true cold-blooded Giuliani fan. After Osama Bin Laden attacked the Twin Towers,
 Amanda steps up and sends letters to President Bush to declare that Iraq has WMDs. 
 
 
