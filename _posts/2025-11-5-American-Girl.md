@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "American Girl: 2001"
-standfirst: "Meet Amanda! Meet her in a  turbulent time in America's history. Watch her hande friends, foe and al-Qaeda"
+standfirst: "Meet Amanda! In a  turbulent time in America's history. Watch her hande friends, foe and al-Qaeda"
 author: "Emilia Bronk"
 date: 2025-11-5
 cover: /assets/Copy of B.jpg
