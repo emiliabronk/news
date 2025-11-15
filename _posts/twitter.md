@@ -1,0 +1,13 @@
+---
+layout: post
+title: "X, Formerly Known as Twitter changes name to Twitter (formerly known as X, formerly known as Twitter)"
+standfirst: "Owner, and University of Pennsylvania Alumnus, Elon Musk Announced."
+author: "Emilia"
+date: 2025-06-02
+cover: /assets/twitter.jpg
+---
+As on 4pm, June 2nd - big changes are happening at the tech company Twitter (formerly known as X, formerly known as Twitter).
+
+Elon Musk, owner of Twitter (formerly known as X, formerly known as Twitter), announced on Twitter As CEO of Twitter (formerly known as X, formerly known as Twitter) that his company, X (formerly known as Twitter), would be transitioning its brand, logo and name to Twitter (formerly known as X, formerly known as Twitter) again.
+
+In a press release the company formerly known as X, detailed the name change as a step in the not so far right direction for Twitter (formerly known as X, formerly known as Twitter).
