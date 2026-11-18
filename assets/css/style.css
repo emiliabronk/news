@@ -40,13 +40,16 @@ a:focus-visible, input:focus-visible { outline: 2px solid var(--green); outline-
 .story--brief { padding: 15px 0; }
 .story--brief + .story--brief { border-top: 1px solid var(--rule); }
 .story h2, .story h3 { margin: 0; line-height: 1.08; overflow-wrap: anywhere; }
-.story h2 { font-size: clamp(2.3rem, 5vw, 4.5rem); letter-spacing: -.045em; }
+.story h2 { font-size: clamp(2.1rem, 4.5vw, 4rem); letter-spacing: -.045em; }
 .story h3 { font-size: clamp(1.35rem, 2vw, 1.75rem); letter-spacing: -.02em; }
 .story p { margin: 8px 0; color: var(--muted); line-height: 1.4; }
 .story time { display: block; margin-top: 11px; color: var(--muted); font: .72rem/1.2 var(--sans); }
 .story-link { display: block; text-decoration: none; }
 .story-link:hover :is(h2,h3) { text-decoration: underline; text-decoration-thickness: 1px; }
 .story-image { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; background: #e7e3d9; margin-bottom: 13px; }
+.story--brief .story-link { display: flex; flex-direction: row-reverse; align-items: flex-start; gap: 12px; }
+.story--brief .story-copy { flex: 1; min-width: 0; }
+.story--brief .story-image { flex: none; width: clamp(60px, 6vw, 88px); aspect-ratio: 1; margin: 0; }
 .story--lead .story-link { display: flex; flex-direction: column-reverse; align-items: flex-start; gap: 16px; }
 .story--lead .story-image { max-height: 500px; aspect-ratio: 16 / 10; margin: 0; }
 .story .story-image--uncropped { aspect-ratio: auto; max-height: none; }

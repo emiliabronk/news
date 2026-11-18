@@ -2,8 +2,8 @@
 {% assign summary = story.standfirst | default: story.excerpt | strip_html | strip_newlines %}
 <article class="story story--{{ include.style }}" data-post data-title="{{ story.title | escape }}" data-standfirst="{{ summary | escape }}">
   <a class="story-link" href="{{ story.url | relative_url }}">
-    {% if story.cover and include.style != 'brief' %}
-      <img class="story-image{% if story.cover_uncropped %} story-image--uncropped{% endif %}" src="{{ story.cover | relative_url }}" alt="{{ story.cover_alt | escape }}"{% if include.style != 'lead' %} loading="lazy"{% endif %}>
+    {% if story.cover %}
+      <img class="story-image{% if story.cover_uncropped and include.style != 'brief' %} story-image--uncropped{% endif %}" src="{{ story.cover | relative_url }}" alt="{{ story.cover_alt | escape }}"{% if include.style != 'lead' %} loading="lazy"{% endif %}>
     {% endif %}
     <div class="story-copy">
       {% if include.style == 'lead' %}
