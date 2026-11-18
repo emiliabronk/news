@@ -18,17 +18,17 @@ title: Front Page
     {% if stories.size > 1 %}
       <section class="latest" aria-labelledby="latest-heading" data-story-region>
         <h2 class="section-label" id="latest-heading">Latest Stories</h2>
-        {% for story in stories limit:3 offset:1 %}
+        {% for story in stories limit:2 offset:1 %}
           {% include story.html story=story style='brief' %}
         {% endfor %}
       </section>
     {% endif %}
   </div>
-  {% if stories.size > 4 %}
+  {% if stories.size > 3 %}
     <section class="archive" aria-labelledby="archive-heading" data-story-region>
       <h2 class="section-label" id="archive-heading">From the Archive</h2>
       <div class="archive-grid">
-        {% for story in stories offset:4 %}
+        {% for story in stories offset:3 %}
           {% include story.html story=story style='archive' %}
         {% endfor %}
       </div>
