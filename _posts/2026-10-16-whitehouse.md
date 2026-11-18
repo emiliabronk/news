@@ -8,7 +8,6 @@ cover: /assets/whitehouse.jpg
 cover_alt: 'Satirical image of a White House briefing with the caption “my period is longer than 5 days.”'
 cover_uncropped: true
 ---
-Your text here.
 
 **WASHINGTON, D.C.** — A woman who I can only describe through Lena Dunham’s words in Season 5, Episode 1 of _Girls_ — “Um… shellacked. It looks like you went to Hershey, Pennsylvania, and just went, like… [vocalizes]” — and third-grade spelling bee runner-up Katie Zacharia has achieved a feat not even I could, as I am actively trying to get fired from my internship: a five-day tenure as White House Press Secretary.
 
