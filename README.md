@@ -9,7 +9,7 @@
 
 ## How to use
 1. Upload all files to your `news` repo.
-2. Place your logo file in `assets/logo.jpg` (already included).
+2. Place your logo file in `assets/logo.png` (already included).
 3. Add posts in `_posts/` with optional `cover:` front matter.
 4. name post files with .md at end
 

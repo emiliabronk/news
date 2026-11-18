@@ -19,7 +19,7 @@ a:focus-visible, input:focus-visible { outline: 2px solid var(--green); outline-
 
 .site-header { border-top: 4px solid var(--green); margin-top: 16px; text-align: center; }
 .masthead { display: flex; justify-content: center; align-items: center; gap: 16px; padding: 26px 0 21px; text-decoration: none; color: var(--green); }
-.logo { width: clamp(32px, 5vw, 58px); flex-shrink: 0; }
+.logo { width: clamp(39px, 6vw, 70px); flex-shrink: 0; }
 .masthead-title { font-size: clamp(2rem, 6vw, 5.2rem); font-weight: 700; line-height: 1.02; letter-spacing: -.045em; text-wrap: balance; }
 .nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px clamp(20px, 5vw, 50px); border-block: 1px solid var(--green); padding: 11px 0; }
 .nav a { font: 700 .75rem/1.2 var(--sans); text-transform: uppercase; letter-spacing: .09em; text-decoration: none; }
