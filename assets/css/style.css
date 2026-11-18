@@ -18,10 +18,9 @@ a:focus-visible, input:focus-visible { outline: 2px solid var(--green); outline-
 [hidden] { display: none !important; }
 
 .site-header { border-top: 4px solid var(--green); margin-top: 16px; text-align: center; }
-.masthead { display: flex; justify-content: center; align-items: center; gap: 16px; padding: 26px 0 0; text-decoration: none; color: var(--green); }
+.masthead { display: flex; justify-content: center; align-items: center; gap: 16px; padding: 26px 0 21px; text-decoration: none; color: var(--green); }
 .logo { width: clamp(32px, 5vw, 58px); flex-shrink: 0; }
 .masthead-title { font-size: clamp(2rem, 6vw, 5.2rem); font-weight: 700; line-height: 1.02; letter-spacing: -.045em; text-wrap: balance; }
-.masthead-subtitle { margin: 10px 0 21px; font-style: italic; color: var(--muted); }
 .nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px clamp(20px, 5vw, 50px); border-block: 1px solid var(--green); padding: 11px 0; }
 .nav a { font: 700 .75rem/1.2 var(--sans); text-transform: uppercase; letter-spacing: .09em; text-decoration: none; }
 .nav a:hover, .nav a[aria-current="page"] { text-decoration: underline; }
@@ -79,8 +78,7 @@ a:focus-visible, input:focus-visible { outline: 2px solid var(--green); outline-
   .archive-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 }
 @media (max-width: 600px) {
-  .masthead { gap: 8px; padding-top: 19px; }
-  .masthead-subtitle { margin-bottom: 15px; font-size: .91rem; }
+  .masthead { gap: 8px; padding: 19px 0 15px; }
   .front-grid, .archive-grid { grid-template-columns: minmax(0, 1fr); }
   .latest { border-left: 0; border-top: 3px double var(--green); padding: 13px 0 0; }
   .archive { margin-top: 22px; }
