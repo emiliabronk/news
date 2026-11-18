@@ -1,0 +1,14 @@
+---
+layout: null
+---
+{%- assign recent = site.posts | sort: 'date' | last -%}
+{%- if recent -%}
+{
+  "title": {{ recent.title | jsonify }},
+  "url": {{ recent.url | relative_url | jsonify }},
+  "image": {% if recent.cover %}{{ recent.cover | relative_url | jsonify }}{% else %}null{% endif %},
+  "imageAlt": {{ recent.cover_alt | default: '' | jsonify }}
+}
+{%- else -%}
+null
+{%- endif -%}
