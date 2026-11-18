@@ -2,18 +2,37 @@
 layout: default
 title: Front Page
 ---
-<section class="searchbar">
-  <input id="q" type="search" placeholder="Search headlines and summaries">
-</section>
+{% assign stories = site.posts | sort: 'date' | reverse %}
+{% assign lead = stories | first %}
+<div class="edition-bar">
+  <h1>Front Page</h1>
+  <form class="searchbar" role="search" hidden>
+    <label for="q">Search stories</label>
+    <input id="q" type="search" placeholder="Search headlines" autocomplete="off">
+  </form>
+</div>
 
-<section class="grid">
-  {% assign sorted = site.posts | sort: "date" | reverse %}
-  {% for post in sorted %}
-    <a class="card" href="{{ post.url | relative_url }}" data-post data-title="{{ post.title | escape }}" data-standfirst="{{ post.standfirst | default: post.excerpt | strip_html | strip_newlines | escape }}">
-      {% if post.cover %}<img src="{{ post.cover | relative_url }}" alt="preview">{% endif %}
-      <h3>{{ post.title }}</h3>
-      <p>{{ post.standfirst | default: post.excerpt | strip_html | truncate: 140 }}</p>
-      <div class="card-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
-    </a>
-  {% endfor %}
-</section>
+{% if lead %}
+  <div class="front-grid">
+    {% include story.html story=lead style='lead' %}
+    {% if stories.size > 1 %}
+      <section class="latest" aria-labelledby="latest-heading" data-story-region>
+        <h2 class="section-label" id="latest-heading">Latest Stories</h2>
+        {% for story in stories limit:3 offset:1 %}
+          {% include story.html story=story style='brief' %}
+        {% endfor %}
+      </section>
+    {% endif %}
+  </div>
+  {% if stories.size > 4 %}
+    <section class="archive" aria-labelledby="archive-heading" data-story-region>
+      <h2 class="section-label" id="archive-heading">From the Archive</h2>
+      <div class="archive-grid">
+        {% for story in stories offset:4 %}
+          {% include story.html story=story style='archive' %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+{% endif %}
+<p class="search-empty" role="status" hidden>No stories match your search.</p>

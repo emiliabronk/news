@@ -5,6 +5,9 @@ standfirst: "WHPS lasts, 5 days."
 author: "Emilia Bronk"
 date: 2026-10-16
 cover: /assets/whitehouse.jpg
+cover_alt: The White House seen from the North Lawn
+cover_credit: Ed Brown / Wikimedia Commons
+cover_source: https://commons.wikimedia.org/wiki/File:White_House.jpg
 ---
 Your text here.
 

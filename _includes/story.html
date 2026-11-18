@@ -1,0 +1,18 @@
+{% assign story = include.story %}
+{% assign summary = story.standfirst | default: story.excerpt | strip_html | strip_newlines %}
+<article class="story story--{{ include.style }}" data-post data-title="{{ story.title | escape }}" data-standfirst="{{ summary | escape }}">
+  <a class="story-link" href="{{ story.url | relative_url }}">
+    {% if story.cover and include.style != 'brief' %}
+      <img class="story-image" src="{{ story.cover | relative_url }}" alt="{{ story.cover_alt | escape }}"{% if include.style != 'lead' %} loading="lazy"{% endif %}>
+    {% endif %}
+    <div class="story-copy">
+      {% if include.style == 'lead' %}
+        <h2>{{ story.title | escape }}</h2>
+      {% else %}
+        <h3>{{ story.title | escape }}</h3>
+      {% endif %}
+      <p>{{ summary | truncate: 170 | escape }}</p>
+      <time datetime="{{ story.date | date: '%Y-%m-%d' }}">{{ story.date | date: '%b %-d, %Y' }}</time>
+    </div>
+  </a>
+</article>

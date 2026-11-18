@@ -2,12 +2,19 @@
 layout: default
 ---
 <article class="article">
+  <header class="article-header">
+    <h1 class="headline">{{ page.title | escape }}</h1>
+    {% if page.standfirst %}<p class="standfirst">{{ page.standfirst | escape }}</p>{% endif %}
+    <div class="meta">By {{ page.author | default: 'Staff' | escape }} <span aria-hidden="true">·</span> <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time></div>
+  </header>
   {% if page.cover %}
-    <img class="cover" src="{{ page.cover | relative_url }}" alt="cover image">
+    <figure class="article-cover">
+      <img class="cover" src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | escape }}">
+      {% if page.cover_credit %}
+        <figcaption><a href="{{ page.cover_source | escape }}">{{ page.cover_credit | escape }}</a></figcaption>
+      {% endif %}
+    </figure>
   {% endif %}
-  <h1 class="headline">{{ page.title }}</h1>
-  <div class="meta">By {{ page.author | default: "Staff" }}, {{ page.date | date: "%B %-d, %Y" }}</div>
-  {% if page.standfirst %}<p class="standfirst">{{ page.standfirst }}</p>{% endif %}
   <div class="content">
     {{ content }}
   </div>

@@ -11,8 +11,15 @@
   </head>
   <body>
     {% include header.html %}
-    <main class="container">
-      {{ content }}
+    <main class="container" id="main">
+      {% if page.url == '/about/' or page.url == '/contact/' %}
+        <div class="article page-copy">
+          <h1 class="headline">{{ page.title | escape }}</h1>
+          <div class="content">{{ content }}</div>
+        </div>
+      {% else %}
+        {{ content }}
+      {% endif %}
     </main>
     {% include footer.html %}
     <script src="{{ "/assets/js/search.js" | relative_url }}" defer></script>
