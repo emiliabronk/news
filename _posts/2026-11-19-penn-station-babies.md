@@ -4,6 +4,8 @@ title: "Congratulations! 667 Babies Born at New York Penn Station!"
 standfirst: "In what they're calling the largest mass infant gathering of the day"
 author: "Emilia Bronk"
 date: 2026-11-19
+cover: /assets/penn-station-babies.jpg
+cover_alt: "A crowded train station with a blue It's a boy banner and two cartoon babies in the foreground."
 ---
 
 Today was such a special day, as over five hundred newborns had their first day on Earth in New York City's second-favorite regional rail train station.
